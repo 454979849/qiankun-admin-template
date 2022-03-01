@@ -1,0 +1,31 @@
+{
+  "name": "qiankun-react-template",
+  "version": "1.0.0",
+  "description": "微前端框架[基于qiankun]",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm-run-all --serial install:*",
+    "install:main": "cd main-app && npm i",
+    "install:sub-react": "cd sub-react && npm i",
+    "install:sub-react2": "cd sub-react2 && npm i",
+    "build": "npm-run-all build:* && bash ./scripts/bundle.sh",
+    "build:main": "cd main-app && npm run build",
+    "build:sub-react": "cd sub-react && npm run build",
+    "build:sub-react2": "cd sub-react2 && npm run build",
+    "move": "bash ./scripts/bundle.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://114.55.7.123:3000/Liu.Yang5/qiankun-react-template.git"
+  },
+  "keywords": [
+    "微前端",
+    "qiankun",
+    "react"
+  ],
+  "author": "刘洋",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "typeRoots": [
+      "src/ts_types",
+      "node_modules/@types"
+    ]
+  }
+}
